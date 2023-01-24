@@ -4,10 +4,12 @@ services:
   nodejs:
     #fill out the configuration here
     build:
-    context: .
-    dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile
+      
     container_name: nodejs
     image: nodejs
+    
     restart: unless-stopped
     networks:
       - app-network
