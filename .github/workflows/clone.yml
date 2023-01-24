@@ -13,4 +13,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: git clone git@github.com:hamzahs1/hamzahs1.github.io.git
+          script: |
+            cd /pub/${{ secrets.USERNAME }}
+            git clone git@github.com:hamzahs1/hamzahs1.github.io.git
