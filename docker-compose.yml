@@ -36,7 +36,7 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /absolute/path/to/web/template/folder
+      device: /Users/hamzahsiddique/hamzahs1.github.io
       o: bind
 
 networks:
