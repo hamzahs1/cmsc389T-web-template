@@ -6,12 +6,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      
     ports:
-      - "8080:80"  
-    container_name: nodejs
+      - "8080:80"
     image: nodejs
-    
+    container_name: nodejs
     restart: unless-stopped
     networks:
       - app-network
