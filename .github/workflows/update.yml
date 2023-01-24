@@ -16,5 +16,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd hamzahs1/hamzahs1.github.io
+            cd ${{ secrets.USERNAME }}.github.io
             git pull
